@@ -1,0 +1,43 @@
+{
+  "name": "fennec-industries",
+  "version": "0.1.0",
+  "description": "Fennec Industries main website",
+  "main": "server.js",
+  "scripts": {
+    "build": "NODE_ENV=production next build",
+    "start": "next build && node server.js"
+  },
+  "keywords": [
+    "Web",
+    "Development"
+  ],
+  "author": "Jacob Sullivan",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^8.6.4",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-wrap-in-js": "^1.1.1",
+    "bulma": "^0.7.1",
+    "dotenv": "^6.1.0",
+    "emotion": "^9.2.4",
+    "emotion-server": "^9.2.8",
+    "express": "^4.16.3",
+    "glob": "^7.1.2",
+    "helmet": "^3.12.1",
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^6.1.1",
+    "node-sass": "^4.9.0",
+    "nodemailer": "^4.6.7",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-loader": "^2.1.5",
+    "raw-loader": "^0.5.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-emotion": "^9.2.4",
+    "sass-loader": "^7.0.3",
+    "twilio": "^3.19.1"
+  },
+  "devDependencies": {
+    "babel-plugin-emotion": "^9.2.6"
+  }
+}

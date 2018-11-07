@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:600|Fanwood+Text|Gentium+Basic:700|Heebo:500|Megrim|Oxygen:700|Quattrocento+Sans:700|Quattrocento:700|Rajdhani:700|Ruda:700|Source+Code+Pro|Source+Sans+Pro|Volkhov');
+html,
+body {
+  min-height: 100vh;
+}
+
+.content h2 {
+  @media screen and (max-width: 500px) {
+    font-size: 3em !important;
+  }
+}
+
+main > section.section {
+  padding: 8rem 1.5rem;
+}
+
+main > section:nth-of-type(odd) {
+  background-color: #fef9f5;
+}
+
+main > section:first-of-type {
+  background-color: #ffffff;
+  padding: 3rem 1.5rem;
+}
+
+::selection {
+  background: #ffb7b7;
+}
+::-moz-selection {
+  background: #ffb7b7;
+}
+
+@font-face {
+  font-family: myriad;
+  src: url('static/fonts/Myriad Pro Regular.ttf');
+}
+
+@font-face {
+  font-family: gothambold;
+  src: url('static/fonts/Gotham-Bold.otf');
+}
+
+@font-face {
+  font-family: gotham;
+  src: url('static/fonts/Gotham-Light.otf');
+}
+
+@import 'bulma/sass/utilities/initial-variables';
+@import 'bulma/bulma';

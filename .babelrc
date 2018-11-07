@@ -1,0 +1,33 @@
+{
+  env: {
+    production: {
+      plugins: [['emotion', { hoist: true }]],
+    },
+    development: {
+      plugins: [['emotion', { sourceMap: true, autoLabel: true }]],
+    },
+  },
+  plugins: [
+    [
+      'module-resolver',
+      {
+        root: ['.'],
+        alias: {
+          styles: './styles',
+          components: './shared',
+          utilities: './utilities',
+        },
+        cwd: 'babelrc',
+      },
+    ],
+    ['emotion'],
+    [
+      'wrap-in-js',
+      {
+        extensions: ['css$', 'scss$'],
+      },
+    ],
+  ],
+  presets: ['next/babel'],
+  ignore: [],
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Crawl-Delay: 60
+Disallow:
+Sitemap: https://fennecindustries.com/static/sitemap.xml
